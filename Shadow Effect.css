@@ -1,0 +1,16 @@
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+#outerBox{
+    width: 45rem;
+    height: 15rem;
+    border: 2px solid black;
+    text-align: center;
+    margin-top: 10rem;
+}
+#innerText{
+    font: bolder 90px sans-serif;
+    border: 2px solid red;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Objects and Arrays </title>
+    <link rel="shortcut icon" type="image/png" href="Favicon 1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">    
+</head>
+<body>
+    <p onclick="makeGreen()"> xBREAKxDOWNx </p>
+    <script src="Objects and Arrays.js"> </script>
+<script>
+    const dogs = [{ name: 'Sickness', age:2}, { name: 'nhungo', age:8 }];
+
+    function makeGreen(){
+        const p = document.querySelectorAll('p');
+        p.style.color = 'red';
+        p.style.fontSize = '50px';
+    }
+    //interpolated
+    let interpolated = 'interpolated by back ticks';
+    console.log('Hello, I am a %s string', 'interpolated');
+    console.log(`Hello, I am a ${interpolated} string`);
+    //styled
+    console.log( '%c I am a styled console log', 'background:red;' );
+    //warning
+    console.warn( 'I am a warned console log');
+    //error
+    console.error( 'I am an errored console log');
+    //info
+    console.info( 'I am an informed console log');
+    //testing
+    console.assert( 1 === 1, 'Thats wrong');
+    console.assert( 1 === '1', 'Thats wrong');
+    //viewing the entire DOM Element
+    const p = document.querySelectorAll('p');
+    console.dir( p );
+    //grouping together
+    dogs.forEach( function dogsLoop( i ){
+        console.group(`${i.name}`);
+        console.log(`My name is ${i.name}`);
+        console.log(`And I am ${i.age} years old`);
+        console.groupEnd(`${i.name}`);
+    });
+    dogs.forEach( function dogsLoop( i ){
+        console.groupCollapsed(`${i.name}`);
+        console.log(`My name is ${i.name}`);
+        console.log(`And I am ${i.age} years old`);
+        console.groupEnd(`${i.name}`);
+    });
+    //count
+    console.count('console.log');
+    //time
+    console.time('fetching data time');
+    fetch('https://www.youtube.com/watch?v=xkzDaKwinA8')
+        .then( data => data.json())
+        .then( data => {
+            console.timeEnd('fetching data time')
+            console.log( data )
+        });
+    //tablle
+    console.table(dogs);    
+</script>
+</body>
+</html>

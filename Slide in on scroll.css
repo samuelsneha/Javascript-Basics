@@ -1,0 +1,11 @@
+.images{
+    height: 8rem;
+    width: 15rem;
+    margin: 2rem;
+    transform: translateX(30%) scale(0.95);
+    opacity: 0;
+}
+.bouncing{
+    transform: translateX(0%) scale(1.5);
+    opacity: 1;
+}

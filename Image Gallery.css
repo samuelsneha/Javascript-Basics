@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#galleryBox{
+    display: flex;
+    height: 100vh;    
+}
+.panel{
+    flex-grow: 1;
+    text-align: center;
+    font: bold 20px sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.panel p{
+    flex-grow: 2;
+    margin: 4rem 0 0 0;
+}
+#panel1{
+    background: url(Image\ 2.jpg) no-repeat center center/cover;
+}
+#panel2{
+    background: url(Image\ 3.jpg) no-repeat center center/cover;
+}
+#panel3{
+    background: url(Image\ 4.jpg) no-repeat center center/cover;
+}
+#panel4{
+    background: url(Image\ 5.jpg) no-repeat center center/cover;
+}
+#panel5{
+    background: url(Image\ 6.jpg) no-repeat center center/cover;
+}
+.clicked .first{
+    transform: translateY(-6rem);
+}
+.clicked .third{
+    transform: translateY(12rem);
+}
+.open{
+    flex-grow: 2;
+    font: 30px sans-serif;
+    transition: all 0.5s;
+}
+.unclicked .first{
+    transform: translateY(6rem);
+    transition: transform 0.5s;
+}
+.unclicked .third{
+    transform: translateY(-6rem);
+    transition: transform 0.5s;
+}

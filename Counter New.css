@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sections{
+    margin: 5rem;
+    padding: 3rem;
+}
+#displayBox{
+    display: flex;
+}
+.displayBoxes{
+    height: 7rem;
+    width: 7rem;
+    border: 1px solid black;
+    margin: 5rem 5rem 0 5rem;
+    background-color: aliceblue;
+    font: 45px cursive;
+    text-align: center;
+    text-decoration: dashed;
+    line-height: 7rem;
+    z-index: 1;
+}
+.displayBoxesCover{
+    border: 1px solid black;
+    height: 12rem;
+    position: relative;
+    overflow: hidden;
+}
+.belowBoxes{
+    position: absolute;
+    top: 13rem;
+    left: 5rem;
+    margin: 0;
+    /* display: none; */
+    background-color: red;
+    /* z-index: 100; */
+}
+.animate .belowBoxes{
+    display: block;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    transition: top 0.5s;
+    border-top:  2px solid black;
+}

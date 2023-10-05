@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outerBox{
+    height: 25rem;
+    width: 70rem;
+    display: -webkit-inline-box;
+    overflow-x: scroll;
+    border: 1px solid black;
+    margin: 10rem 10rem 10rem 10rem;
+    padding: 25px;
+    background-color: aquamarine;
+}
+.item{
+    height: 20rem;
+    width: 10rem;
+    border: 1px solid black;
+}
+.item1{
+    background-color: blueviolet;
+}
+.item2{
+    background-color: green;
+}
+.item3{
+    background-color: azure;
+}
+.item4{
+    background-color:darkorange;
+}
+.item5{
+    background-color: paleturquoise;
+}
+.item6{
+    background-color: lightcoral;
+}
+.item7{
+    background-color:seashell;
+}
+.item8{
+    background-color:hotpink;
+}
+.item9{
+    background-color:mistyrose;
+}
+.item10{
+    background-color: darkkhaki;
+}
+.item11{
+    background-color:yellow;
+}
+.item12{
+    background-color:grey;
+}
+.item13{
+    background-color: silver;
+}
+.item14{
+    background-color:orangered;
+}
+.item15{
+    background-color:whitesmoke;
+}
+.clickedClass{
+    cursor: grabbing;
+    transform: scale(1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

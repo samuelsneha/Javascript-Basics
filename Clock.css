@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+#clockDiv{
+    height: 28rem;
+    width: 28rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 10rem auto 10rem auto;
+    background-color: aliceblue;
+}
+#clockInnerDiv{
+    height: 28rem;
+    width: 28rem;
+    position: relative;
+}
+.hand{
+    width: 10.5rem;
+    border: 1px solid black;
+    background-color: black;
+    position: absolute;
+    top: 50%; 
+    left: 2rem;
+
+    transform-origin: 100%;
+    
+    transform: rotate(88deg);
+
+}
+#hourHand{
+    height: 0.09rem;
+}
+#minutesHand{
+    height: 0.06rem;
+    border: 1px solid red;
+    background-color: red;
+}
+#secondsHand{
+    height: 0.04rem;
+}
+.numbers{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /* background-color: antiquewhite; */
+    font: bold 22px cursive;
+}
+#number1{
+    transform: rotate(30deg);
+}
+#number2{
+    transform: rotate(60deg);
+}
+#number3{
+    transform: rotate(90deg);
+}
+#number4{
+    transform: rotate(120deg);
+}
+#number5{
+    transform: rotate(150deg);
+}
+#number6{
+    transform: rotate(180deg);
+}
+#number7{
+    transform: rotate(210deg);
+}
+#number8{
+    transform: rotate(240deg);
+}
+#number9{
+    transform: rotate(270deg);
+}
+#number10{
+    transform: rotate(300deg);
+}
+#number11{
+    transform: rotate(330deg);
+}
+

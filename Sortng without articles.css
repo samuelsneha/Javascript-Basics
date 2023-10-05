@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 1480px;
+    height: 770px;
+    position: relative;
+    padding: 5px;
+}
+#ulId{
+    margin: 5rem auto 5rem auto;
+    height: 40rem;
+    width: 18rem;
+    background-color: darksalmon;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#ulId::before{
+    content: "";
+    background: url(Demo.jpg) no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.45;
+}
+#ulId li{
+    height: 2.5rem;
+    width: 16rem;
+    font-family: cursive;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    margin-left: 5px;
+}
+#ulId li:hover{
+    color: blue;
+}

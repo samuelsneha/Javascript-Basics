@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> New Counter </title>
+    <link rel="stylesheet" href="Counter New.css">
+    <link rel="shortcut icon" type="image/png" href="Favicon 1.png"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">    
+</head>
+<body>
+    <div id="mainBox">
+        <div id="usersBox" class="sections">
+            <div id="enterBox">
+                <h1> Enter your Time</h1> 
+            </div>
+            <div id="timeBox">
+              <form id="displayForm">
+                <input type="number" id="hrs" placeholder="Enter hours">
+                <input type="number" id="mins" placeholder="Enter minutes">
+                <input type="number" id="sec" placeholder="Enter seconds" value="10">
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+        </div>
+        <hr>
+        <div id="displayBox" class="sections">
+            <div id="hoursDisplayBox" class="displayBoxesCover">
+                <div id="hoursDisplay" class="displayBoxes"> </div>
+                <div id="hoursDisplayBelow" class="displayBoxes belowBoxes"> </div>
+            </div>
+            <div id="minutesDisplayBox" class="displayBoxesCover">
+                <div id="minutesDisplay" class="displayBoxes"> </div>
+                <div id="minutesDisplayBelow" class="displayBoxes belowBoxes"> </div>
+            </div>
+            <div id="secondsDisplayBox" class="displayBoxesCover">
+                <div id="secondsDisplay" class="displayBoxes"> </div>
+                <div id="secondsDisplayBelow" class="displayBoxes belowBoxes"> </div>
+            </div>
+        </div>
+        <hr>
+        <div id="beBackBox" class="sections">
+            <h3> Be back at <span id="backHrs" class="backTime"></span> <span id="backMinutes" class="backTime"></span> <span id="backSeconds" class="backTime"></span> </h3>
+        </div>
+    </div>
+    <script src="Counter New.js"></script>
+</body>
+</html>

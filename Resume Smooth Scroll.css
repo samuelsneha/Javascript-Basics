@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbarBox{
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    border: 2px solid black;
+}
+#navbarUL{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarLI{
+    font: bold 35px sans-serif;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+#HOME{
+    height: 40rem;
+    background-color: antiquewhite;
+}
+#ABOUTUS{
+    height: 45rem;
+    background-color: aqua;
+}
+#OURSERVICES{
+    height: 50rem;
+    background-color: slateblue;
+}
+#TECHNOLOGIESWEUSE{
+    height: 40rem;
+    background-color: seashell;
+}
+#CONTACTUS{
+    height: 50rem;
+    background-color: violet;
+}

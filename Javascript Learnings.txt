@@ -1,0 +1,122 @@
+//Video - 1.mp4 has been deleted due to git issues. Kindy adjust
+1) forEach does the work of only iterating, like an extended version of for loop. It does not store or catch the output values
+   forEach( function(parameter){...})
+   for in loop in javascript loops through the properties of an Object and consoles the according to your manipulation. Eg: Person{ fname: xyz, lname: qwe }. Here keys are fname, lname and properties are xyz, qwe. for (let x in person) { console.log(x) } will print the fname and lname which are the keys here.
+   for of statement loops through the values of an iterable object such as Arrays, Strings, Maps, NodeLists, and more. Eg: const cars = ["BMW", "Volvo", "Mini"]; for (let x of cars) { console.log(x) will print BMW, Volvo and Mini } 
+   Same goes for addEventListener also. element.addEventListener('', function(event){..})
+2) filter, map, sort, reduce, every, some do not need a function name while defining them and these works on Arrays only. You only have to do function( parameters ). Don't forget to do return() while exiting from these functions.
+3) a) filter is you pass 10 items it will give 2 items at the output based on the condition you pass
+   b) map is like you give 10 items as raw materials and you pass all 10 of them in the output in a tranformed manner. The transformations are according to the conditions you apply
+   c) sort works  like bubble sort. 
+        function compareFn(a, b) {
+            if (a is less than b by some ordering criterion) {
+                return -1;
+            }
+            if (a is greater than b by the ordering criterion) {
+                return 1;
+            }
+            // a must be equal to b
+            return 0;
+        }
+    d) map() is like a superset of forEach(), sort() is like a superset of map()    
+4) sort in javascript works as a bubble sort. Both the parameters you take are the first two elements in the array and then you continue to loop through the array the way bubble sort does
+5) querySelectorAll works only on valid DOM Element or document object. whenever you use querySelectorAll, it returns a NodeList.To convert this NodeList into an array either do [...document.querySelectorAll('')] or Array.from(document.querySelectorAll('.mw-category-group a') );
+   Nodelist and Array are slightly different from each other. All built in functions of arrays are not there in NodeList.   
+   To check if querySelectorAll can be applied to an element check the given three conditions and only if all three are correct you can continue. 1) typeof liTags === 'object' 2) liTags !== null 3) 'querySelectorAll' in liTags. Here liTags is the name of the element
+6) the first argument in reduce() acts as an Accumulator which gets added from every previous iteration. Dont forget to initialize the Accumulator either with 0 or Empty Array or Empty Object.   
+7) splice()- it updates the original array ie. overwrites the original array, returns the array after the elements have been removed The syntax is splice( start, deleteCount)
+8) slice()-  it does not overwrites the original array and the original array stays as it is, returns the new array of the removed elements. The syntax is slice( start, end)
+9) concat() - joins two or more arrays and returns a new array containing the joined arrays. It does not change the existing arrays
+10) understand shift(), match(), includes(), join(), trim(),split(), push(), pop(), substr()
+    a) join('') returns the array elements as it is without anything (not even a single space) between them
+11) a) "keydown" fires only when the key is physically pushed down.
+   b) When it is released, you get a "keyup" event.
+   c) "Keypress" fires when an actual character is being inserted in, for instance, a text input. The keypress ignores keys such as delete, arrows, page up, page down, home, end, ctrl, alt, shift, esc, etc. So, if we need to handle those keys, it's better to use either keydown or keyup event.
+12) `This is how you write ${interpolated} texts`
+13) working with strings, numbers, booleans works as pass by copy while working with objects, arrays works as pass by reference
+14) object.assign() is used to create a copy of objects, JSON.parse() is used to convert to objects, JSON.stringify() is used to convert to strings, parseFloat() function parses a string argument and returns a floating point number. 
+15) mod can be used whenever we want the leftovers after equally dividing a particular number. Like we can use it to find the leftover total seconds after equally diving total seconds with 60 (to find the minutes)
+16) setTimeout() is not a part of JS. It is a part of the webAPI provided by the browser. 
+17) 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) var now = Date.now(); and var now = (new Date()).getTime(); both are exactly similar.
+2) in Clock project, the placement of numbers 1 to 12 across the clock is the most tricky and new thing to learn.  
+3) in forms with input type submit its better to have submit event rather than click because submit supports enter key on the keyboard also. Dont forget to clear the input tag    afterwards.
+   To check if an input is empty or no, do i) let text = typeBox.value; ii) if( text === '') 
+4) to create an element from the input data submitted ( or any other way ) usually follow three steps: a) createElement('li') b) innerHTML c) appendChild 
+   OR just create a ::before of the parent element in the css and give it styles to position it. 
+   You get value of an input tag only when to add event listener like submit to it. 
+5) event.preventDefault() is a good thing to practice if you have forms in your html code, to prevent it from submittiing to the server 
+   event.target.something is also a useful method to identify the event and its source
+   event.target.parentElement.parentElement.remove(): like this also its possible
+6) classList.toggle is a good method for clicks/selects 
+7) in classList.add(), when you add a class, in CSS its not necessary that we apply style to that particular element only. You can apply styles to elements below its hierarchy also just like we apply styles for regular elements. Eg. toggleClass of Simple Menu Checklist
+   Also, remember higherElementOfHierarchy.classList.add('class-name'). Now this class-name class you can apply to any elements below the hierarchy of higherElementOfHierarchy element.
+   Same applies to appendChild also. higherElementOfHierarchy.appendChild('element-in-the-lower-hierarchy')
+8) You can put font-awesome unicode in ::before CSS Selector as content and also as i tag in the innerHTML. You should customize your scrollbars.
+9) While setting items into the local storage, you should convert them into strings using JSON.stringify() and while getting items from the local storage you should parse them back to objects using JSON.parse()
+10) The Simple Menu Checklist project can also be done using objects like the one shown in the Wes Bos 30 days JS Video
+11) Understand the difference between innerHTML, textContent and value.
+12) In Counter project what we are are doing is, finding the current time using Date.now(). Then adding the time inputed by the user to the current time. And then subtracting the current time from the total. 
+13) There is a hack to execute setInterval for the first time without a delay and then to have delay for the next rounds. Check the Counter New project and understand it.
+14) If because of alert the statements above it are not being executed then wrap the alert function in a setTimeout. Check the Counter New project and understand it.  
+15) Mouse Events:
+    mousedown - mouse is pressed
+    mouseup - mouse is released
+    mouseleave/mouseout - mouse has left the element
+    mousemove - mouse is moving around the element.It triggers every time the mouse pointer is moved over the div element.
+    mouseenter - mouse moves into an element
+    mouseover - mouseover event triggers when the mouse pointer enters the element, and its child elements. Whereas mouseenter event is only triggered when the mouse pointer enters the div element.
+    Understand what pagex, clientx, screenx, offsetx are - All these are mouse events first of all and some mouse event should occur to use them
+    pageX/Y coordinates are relative to the top left corner of the whole rendered page (including parts hidden by scrolling), The pageX property is equivalent to the clientX value plus the scrollLeft value of the document
+    while clientX/Y coordinates are relative to the top left corner of the visible part of the page, "seen" through browser window.
+    screenX/Y are relative to the physical screen.``
+    Offset is basically the margin of an element ie. the distance an element has from its outer space. Only margin affects the offset value of an element. Padding and Border has no effect on it. 
+16) Non Mouse Events:    
+    offsetLeft/offsetTop/offsetRight. offsetTop is a distance of the element to the nearest positioned parent element. The offsetTop property returns the top position relative to the parent , basically the top space outside the element. Same applies to offsetLeft and offsetRight.
+    offsetHeight - element.offsetHeight returns the height of an element, including vertical padding and borders, scrollbars as an integer in pixels. It does not include the height of pseudo-elements such as ::before or ::after
+    offsetTop and offsetY are two different things. The offsetTop property returns the top position relative to the parent , basically the top space outside the element. Whereas, OffsetY is basically the vartical margin of an element and is a mouse event
+16) Scroll Events:
+    scrollY/X - (based on window) The read-only scrollY property of the Window interface returns the number of pixels that the document is currently scrolled vertically. It can be get only
+    scrollTop/Left - (based on element) The scrollLeft and scrollTop properties returns the number of pixels that the element’s content is scrolled from its left and top edges. ScrollTop is basically can be get and set, where as scrollY of window's only can be get.
+    pageYOffset and scrollY are alias of each other. Just that pageYOffset is more cross compatible across browsers and is applied on window only and not on document
+    window.scrollTo vs window.scrollBy also needs to be explored
+17) getBoundingClientRect() also needs to be explored    
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) AJAX ( Asynchronous Javascript and XML ) is not a programming language, rather a set of technologies like Asynchronous JS, XML and many other things. 
+   AJAX is used to fetch data from the server to the browser and it does this using XMLHttpRequest object (xhr object).
+It is an umbrella term for technologies like Asynchronous JS, XML and many other things. 
+   AJAX helps by fetching data asynchronously, no need to load the page and does not interfere with the other DOM elements.
+   These days JSON is used more than XML since its light weight, easy to understand and many other advantages over XML. SOAP APIs were based on XML.  
+   const xhr = new XMLHttpRequest(); //to instantiate an xhr object
+   xhr.open('GET', abc.txt, true ) //open method for GET Request. We can do POST also.
+   Some of the other AJAX methods are onprogress, onreadystatechange, onload, send    
+2) A function which takes another function in its input is called Callback Function. Callback function will be executed only after everything else inside that function is executed.
+3) Promise is an object. Promise takes a function and this function takes two other functions as parameters- resolve and reject.
+   Promise is either in a pending state, fulfilled state or rejected state.
+   We call a promise using .then() for resolve parameter and .catch() for reject parameter
+   then() and catch() are methods of promise. .then returns apromise
+   Promises are used in callback function normally
+4) Fetch API is a better, alternative and asynchronous way to fetch data rather than using xhr object. 
+   let p = fetch(url, [options]) where [options] will be used in case of POST request
+   It uses .then two times because the fetch() returns a promise and for this promise we use the first .then() which also returns a promise and then for this promise we use the     second .then()      
+   Just like xhr we can send GET/POST request to fetch data from the server to the browser or upload data to the server.
+   Since fetch() is promise based, we can use either .then() twice or Async Await 
+5) By using Async Await, we wont have to do .then twice ike we did in Fetch API. Its a relief from that twice then. Its a more elegant way to work with promises.
+   Whenever there is Async before a function, remember that entire function returns a Promise always. And remember that inside that async function we will always have await which         makes the promise wait.
+   Inside that function, we are waiting for response of another Promise using await and fetch.
+   Then we wait for another promise which was the putput of first promise, but converting it to json ie. response.json() . We can also do response.text(), but .text()
+   won't parse it. .json() can only parse it. By doing .json() we wont have to use .stringify() or .parse() as it automatically parses and makes the data readable. So basically, inside async function we await two promises and only after both the awaits are returned, the async promise is resolved
+   And after the Async promise is resolved, we execute the .then of its output 
+   Await ( asynchronous execution ) means to execute something in background while the normal flow of the code continues and once the execution of await is completed it returns its          output.
+   Await is used to stop the regular execution of the flow of the program.
+6) The 'window' is the object of the browser. It is like an API that is used to set and access all the properties and methods of the browser like an alert box or setting a timeout.                        It is automatically created by the browser.   
+   The 'screen' is the object of the window.
+   A 'document' object represents the HTML code that is displayed inside a browser window. The 'document' is the object of the window, therefore it is the same as - window.document
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) If you use data-* attribute in any of your HTML tags, then only you can use (this.dataset) to get access to that particular HTML Tag.
+   Further if you do console.log(this.dataset.xyx) (where xyz can be any name you have given to your data attribute) then you will get its value 
+   But if you do console.log(this.dataset.xyx) on an element which does not have data-* attribute, then you will get undefined or null.
+   Similarly you can also do console.log(this.name) and console.log(this.value) to get the values of name and value attribute of a particular HTML Tag
+2) To iterate through all the keys in an object, we should use for-in loop   

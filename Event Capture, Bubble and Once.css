@@ -1,0 +1,21 @@
+#first{
+    height: 20rem;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+#second{
+    background-color: chartreuse;
+    position: relative;
+    width: 70%;
+    height: 65%;
+    margin-top: 5%;
+    margin-left: 15%;
+    overflow: hidden;
+}
+#third{
+    background-color: crimson;
+    width: 70%;
+    height: 45%;
+    margin-top: 6%;
+    margin-left: 15%;
+}

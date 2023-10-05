@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Variables in Javascript </title>
+    <link rel="shortcut icon" type="image/png" href="Favicon 1.png">
+    <link rel="stylesheet" type = "text/css" href="CSS Variables in JS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">    
+</head>
+<body>
+    <div id="outerBox">
+        <h2> Update CSS Variables in  <span id="textColor"> JS </span> </h2>
+        <div id="variablesBox">
+            <label for="spacing"> Spacing: </label>
+            <input type="range" name="spacing" min="10" max="200" value="10" step="10" data-sizing="px">
+            <label for="blur"> Blur: </label>
+            <input type="range" name="blur" min="0" max="25" value="10" step="5" data-sizing="px">
+            <label for="base"> Base Color: </label>
+            <input type="color" name="base" value="red" id="colorBar">
+        </div>
+        <div id="imageBox">
+            <img src="Image 1.jpg" alt="Image to be displayed">
+        </div>
+    </div>
+    <script src="CSS Variables in JS.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --base: red;
+    --space: 50px;
+    --blur: 5px;
+}
+#variablesBox{
+    border: 2px solid black;
+}
+#imageBox{
+    height: 35rem;
+    width: 90rem;
+    border: 2px solid black; 
+    padding: var(--space);
+    background-color: var(--base);
+}
+#imageBox img{
+    filter: blur(var(--blur));
+}
+#textColor{
+    color: var(--base);
+}

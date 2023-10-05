@@ -1,0 +1,16 @@
+The net basically works like: Client( like my laptop ) -- ( Browser ) -- ( Server )  where the browser works like a waiter/medium between the client and server for requests and responses.
+Browser is basically the one which displays all the web files it receives from the server to clients.Once the IP Address is determined from the DNS, the browser creates an HTTP request and this request contains lots of hidden information such as the header, cookies, form-data etc.
+URL basically has three parts - the protocol, the domain and the document.
+The protocols basically the https, http, ftp etc. ( When we open file from our local computer, the protocol used is file. Here since internet is not required to display something from your own computer, http/https etc protocols are not required and file protocol is used ).
+Domain Names are the google.com, wikipedia.org, umich.edu etc
+Subdomains are the ones before the domains eg. blog.example.com, www.google.com etc
+So in case of blog.example.com- blog is the subdomain, example.com is the domain.
+Going further, blog is the third level domain, example is the second level domain, .com is the top level domain. 
+Document is the optional part and contains index.html (bu default), contact.html, xyz.friend.html etc.
+The internet is basically the WAN
+title attribute in img tag is used when we hover, accesskey attribute, tabindex attribute etc.Figure tag is btter when you need to display images. aria-label attribute is used for accessibility
+For CSS, the highest most importance is given to 1) Inline styles then 2) Internal styles ( in the head tag ) then 3) External styles ( .css file ) and then finally least important is 4) the browsers default settings. 
+So first the browser will put its on default setting on an element, then will check the external .css file and override with those styles, then will check the internal styles in the head tag and override with them instead and then finally the inline styles. The inline styles having highest precedence will override all other styles.
+In case of external style files, the recent most style has the highest precedence and will be used.
+ 
+

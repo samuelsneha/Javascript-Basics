@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbarBox{
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    border: 2px solid black;
+}
+#navbarUL{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarLI{
+    font: bold 35px sans-serif;
+    text-decoration: underline;
+    color: blue;
+}
+#HOME{
+    height: 40rem;
+    background-color: antiquewhite;
+}
+#ABOUTUS{
+    height: 45rem;
+    background-color: aqua;
+}
+#OURSERVICES{
+    height: 50rem;
+    background-color: slateblue;
+}
+#TECHNOLOGIESWEUSE{
+    height: 40rem;
+    background-color: seashell;
+}
+#CONTACTUS{
+    height: 50rem;
+    background-color: violet;
+}
+#skills{
+    height: 50rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem;
+    background-color: pink;
+}
+#skills .skillsbar{
+    height: 4rem;
+    width: 18rem;
+    border-radius: 23px;
+    border: 1px solid black;
+    margin: 3rem;
+    font: 26px sans-serif;
+    text-align: center;
+    line-height: 3rem;
+}
+.widthcolor{
+    width: 0rem;
+    border: 2px solid greenyellow;
+    height: 4rem;
+    border-radius: 23px;
+    display: none;
+ 
+}
+.random{
+    width: 0;
+    height: 4rem;
+    display: none;
+    border-radius: 23px;
+}
+.added{
+    display: flex;
+}
+.added .random{
+    /* display: flex; */
+    background-color: aqua;
+    width: 8rem;
+    transition:  all 0.5ms;
+}

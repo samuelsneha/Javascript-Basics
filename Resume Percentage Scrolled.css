@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbarBox{
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    border: 2px solid black;
+}
+#navbarUL{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarLI{
+    font: bold 35px sans-serif;
+    text-decoration: underline;
+    color: blue;
+}
+aside{
+    float: right;
+}
+#percentageButton{
+    height: 3rem;
+    width: 10rem;
+    border-radius: 23px;
+    position: fixed;
+    top: 1.5rem;
+    right: 3rem;
+    color: white;
+    background-color: black;
+    font: bold 24px sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#HOME{
+    height: 40rem;
+    background-color: antiquewhite;
+}
+#ABOUTUS{
+    height: 45rem;
+    background-color: aqua;
+}
+#OURSERVICES{
+    height: 50rem;
+    background-color: slateblue;
+}
+#TECHNOLOGIESWEUSE{
+    height: 40rem;
+    background-color: seashell;
+}
+#CONTACTUS{
+    height: 50rem;
+    background-color: violet;
+}

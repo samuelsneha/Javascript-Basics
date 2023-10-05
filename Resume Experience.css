@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbarBox{
+    display: flex;
+    height: 15rem;
+    width: 100%;
+    border: 2px solid black;
+}
+#navbarUL{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbarLI{
+    font: bold 35px sans-serif;
+    text-decoration: underline;
+    color: blue;
+}
+#HOME{
+    height: 40rem;
+    background-color: antiquewhite;
+}
+#ABOUTUS{
+    height: 45rem;
+    background-color: aqua;
+}
+#OURSERVICES{
+    height: 50rem;
+    background-color: slateblue;
+}
+#TECHNOLOGIESWEUSE{
+    height: 40rem;
+    background-color: seashell;
+}
+#CONTACTUS{
+    height: 50rem;
+    background-color: violet;
+}
+#WORKEXPERIENCE{
+    height: 60rem;
+    background-color: coral;
+}
+#outerBoxExperience{
+    height: 60rem;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.experienceBoxes{
+    height: 12rem;
+    width: 32rem;
+    border: 2px solid black;
+}
+#divider{
+    height: 55rem;
+    width: 0;
+    border: 10px dashed black;
+    position: absolute;
+}
+.even{
+    position: relative;
+    top: 7rem;
+}
+.odd{
+    position: relative;
+    top: -8rem;
+}
+.even::after{
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 35.7rem;
+    top: 2rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    color: white;
+}
+.odd::after{
+    content: "\f111";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 35.7rem;
+    top: 0rem;
+    font-size: 1.5rem;
+    z-index: 1;
+    color: white;
+}
+#stickyObject i{
+    /* why is sticky not working */
+    position: sticky;
+    font-size: 2.5rem;
+    color: white;
+    z-index: 2;
+    top: 2rem m;
+    left: 0;
+}

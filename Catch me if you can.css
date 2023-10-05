@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#box{
+    height: 8rem;
+    width: 8rem;
+    background-color: purple;
+    margin: 1.5rem;
+    color: aliceblue;
+    text-align: justify;
+}

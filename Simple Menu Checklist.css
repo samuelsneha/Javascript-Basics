@@ -1,0 +1,93 @@
+/* body{
+    height: 95vh;
+    width: 99vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+h1{
+    height: 2rem;
+}
+#outsideDiv{
+    margin-top: 3rem;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 5px;  /* width of the entire scrollbar */
+  }
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+#inner-box{
+    height: 35rem;
+    width: 30rem;
+    border: 1px solid black;
+    margin: 6rem auto 6rem auto;
+    padding: 5px
+}
+#ul-box{
+    height: 30rem;
+    width: 29.3rem;
+    overflow: scroll;
+}
+#ul-box li{
+    font: 18px cursive;
+    margin: 20px;
+    cursor: pointer;
+    height: 2rem;
+    border-bottom: 1px solid  black;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    position: relative;
+    overflow: hidden;
+}
+#ul-box li::before{
+    content: '\f111';
+    font: var(--fa-font-regular);
+    margin-right: 10px;
+}
+li span{
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    z-index: 1;
+}
+span i{
+    font-size:larger;
+}
+.toggleClass{
+    color: blue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-bottom: 0px !important;
+    height: 2.3rem !important;
+    padding: 7px 0 0 11px;
+}
+.toggleClass::before{
+    content: '\f058' !important;
+    font: var(--fa-font-solid) !important;
+    margin-right: 10px !important;
+}
+.toggleClass i{
+    padding: 7px 0 0 11px !important;
+}
+#formId{
+    position: relative;
+}
+#typeBox{
+    width: 20rem;
+    height: 2.5rem;
+    margin: 10px;
+    position: absolute;
+    top: -1rem;
+}
+#addItem{
+    height: 2.5rem;
+    width: 7rem;
+    position: absolute;
+    top: -0.3rem;
+    right: 0.5rem;
+}
