@@ -1,0 +1,16 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 5rem;
+}
+input{
+    height: 2.5rem;
+    width: 20rem;
+    border: 15px double cornflowerblue;
+}
+ul{
+    width: 20rem;
+}

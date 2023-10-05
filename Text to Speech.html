@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Text to Speech (Speech Synthesis)</title>
+    <link rel="shortcut icon" type="image/png" href="Favicon 1.png">
+    <link rel="stylesheet" type = "text/css" href="Text to Speech.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">    
+</head>
+<body>
+    <div id="outerBox">
+        <h1> Welcome to Text to Speech Converter </h1>
+        <select name="voice" id="voicesDropdown">
+            <option value="Please select an option"> Please select an option </option>
+        </select>
+        <label for="rate"> Rate: </label>
+        <input name="rate" id="rate" type="range" min="0" max="5" value="1" step="0.5">
+        <label for="pitch"> Pitch: </label>
+        <input name="pitch" id="pitch" type="range" min="0" max="5" value="1" step="0.5">
+        <textarea name="text">
+            Hello, Javascript is fun
+        </textarea>
+        <!-- the name attributes value of input tag ie. rate pitch and text are important because the name is going to line up with the property on the utterance (which is essentially the voice) -->
+        <input type="submit" value="Speak" id="speak">
+        <input type="submit" value="Stop" id="stop">
+    </div>
+    <script src="Text to Speech.js"></script>
+</body>
+</html>
