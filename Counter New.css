@@ -26,7 +26,7 @@
     border: 1px solid black;
     height: 12rem;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .belowBoxes{
     position: absolute;
@@ -34,7 +34,7 @@
     left: 5rem;
     margin: 0;
     /* display: none; */
-    background-color: red;
+    background-color: lightblue;
     /* z-index: 100; */
 }
 .animate .belowBoxes{

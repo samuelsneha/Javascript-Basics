@@ -16,9 +16,10 @@ aTags.forEach( function(element){
         // }
         whiteBox.style.height = `${coords.height}px`;
         whiteBox.style.width = `${coords.width}px`;
-        whiteBox.style.position = 'fixed';
-        whiteBox.style.top = `${coords.top} px`;
-        whiteBox.style.left = `${coords.left} px`;
+        // whiteBox.style.position = 'f';
+        whiteBox.style.top = `${coords.top}px`;//here earlier you had done the mistake that there was a space before px. Thats why it was not working.
+        whiteBox.style.left = `${coords.left}px`;
+        // element.style.color = '#FFF';
         // whiteBox.style.transform = `translate(${coordsObj.left}px, ${coordsObj.top}px)`;
     })
 })

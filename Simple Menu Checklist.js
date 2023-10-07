@@ -95,11 +95,11 @@ ulBox.addEventListener('click', function( event ){
 })
 
 function saveLists(){
-    localStorage.setItem('ulBox', JSON.stringify(ulBox.innerHTML));
+    localStorage.setItem('ulBox', JSON.stringify(ulBox.innerHTML));//in local storage you should set it in the form of strings only
 }
 
 function displayLists(){
-    ulBox.innerHTML = JSON.parse(localStorage.getItem('ulBox')); //this is how JSON.parse should be 
+    ulBox.innerHTML = JSON.parse(localStorage.getItem('ulBox')); //And then while retrieving it you should parse it.this is how JSON.parse should be.
     // console.log(ulLists);
 }
 

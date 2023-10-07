@@ -21,16 +21,21 @@ function populateVoices(){
     voices.forEach( function(element){
         var options = document.createElement('option');
         options.textContent = element.name + element.lang;
+        options.value= element.name;
         voicesDropdown.appendChild(options); 
     })
 }
 voicesDropdown.addEventListener('change', updateVoice ); //to enable the chosen voice to speak
 function updateVoice(){
-    console.log('its changed');
-    const voice = voices.find( function (element){
-        return element.name === this.value;
-    });
+    var a = this.value; //here thisrepresents the cuurent voice selected.
+    console.log('its changed', a);
+    const voice = voices.filter( function (element){
+        console.log( element.name, a) ;//here initially you had done element.name and this.value. Its correct but since you are inside this filter function, here 'this' points to the voices array. So voices.value is undefined. So you were gettng the same voice for every option. So then you stored this.value in a separate variable and used it. 
+        
+        return element.name === a;
+    })[0];
     msg.voice = voice; //The voice property of the SpeechSynthesisUtterance interface gets and sets the voice that will be used to speak the utterance. This should be set to one of the SpeechSynthesisVoice objects returned by SpeechSynthesis.getVoices()
+    console.log(voice);
     toggleVoice(); //if you change the voice then cancel the current one and update the speak property with the latest one
 } 
 function toggleVoice(){ 

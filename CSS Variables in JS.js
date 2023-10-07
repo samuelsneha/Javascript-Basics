@@ -19,7 +19,9 @@ inputRanges.forEach(function(element){
         }
         else{
             console.log('yes its blur')
-            image.style.filter = `--${this.name(this.value)}` + `${suffix}`; //? not working. How to do
+            // image.style.filter = `--${this.name(this.value)}` + `${suffix}`; //? not working. How to do
+            // image.style.filter = `blur(${this.value}px)`; //this is how we do it
+            image.style = `--blur:${this.value}px`; //better way to do it
         }
 
     })

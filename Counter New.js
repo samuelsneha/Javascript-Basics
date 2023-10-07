@@ -1,3 +1,4 @@
+//mathematic calculation is wrong over here. Correct it when free.
 var form = document.getElementById('displayForm');
 var userHours = document.getElementById('hrs');
 var userMinutes = document.getElementById('mins');
@@ -59,17 +60,17 @@ function displayTime(secondsLeft2){
     minutesToDisplay = Math.round(secondsLeft2/60);
     secondsToDisplay = secondsLeft2 % 3600;
     console.log(hoursToDispay, minutesToDisplay, secondsToDisplay);
-    setTimeout( function(){
     hoursBox.innerHTML = hoursToDispay;
     minutesBox.innerHTML = minutesToDisplay;
     secondsBox.innerHTML = secondsToDisplay;
-   }, 500);
     secondsBoxBelow.innerHTML = secondsToDisplay + 1;
+    minutesBox.innerHTML = minutesToDisplay + 1;
+    hoursBox.innerHTML = hoursToDispay + 1;
 }
 
 function animateTime(){
     for( let i = 0; i < boxes.length; i++ ){
-        boxes[i].classList.add('animate'); //didnt get the transition property properly
+        boxes[i].classList.add('animate'); //here earlier your transition was not working because you had put display none and then did transition. Transitions work like a blink when the display is none. But then when i removed it and made the overflow:hidden of its parent property it started working properly.
     }
     // console.log('its animating')
     setTimeout( function() {

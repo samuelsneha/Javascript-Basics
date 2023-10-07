@@ -29,16 +29,19 @@ function letsDraw(event){
             hue = 0;
         }
         //this is smart logic! try to implement it somewhere!
-        if( ctx.lineWidth > 100 || ctx.lineWidth <= 1 ){ //? If I put < 1 this doesnt seem to work. Why ? 
-        //Zero, negative, Infinity, and NaN values are ignored in lineWidth. This value is 1.0 by default.    
-            direction = !direction;
-        }
-        if(direction){
+        console.log(ctx.lineWidth);
+        
+         if( ctx.lineWidth > 100 || ctx.lineWidth <= 1 ){ //maybe a property of canvas that linewidth doesnt goes below 1. And hence here if you write < 1 it wont work.
+         //Zero, negative, Infinity, and NaN values are ignored in lineWidth. This value is 1.0 by default.    
+             direction = !direction;
+
+         }
+         if(direction){
             ctx.lineWidth--;
-        }
-        else{
-            ctx.lineWidth++;
-        }
+         }
+         else{
+             ctx.lineWidth++;
+         }
     }
 }
 

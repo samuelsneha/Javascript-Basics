@@ -12,5 +12,6 @@ title attribute in img tag is used when we hover, accesskey attribute, tabindex 
 For CSS, the highest most importance is given to 1) Inline styles then 2) Internal styles ( in the head tag ) then 3) External styles ( .css file ) and then finally least important is 4) the browsers default settings. 
 So first the browser will put its on default setting on an element, then will check the external .css file and override with those styles, then will check the internal styles in the head tag and override with them instead and then finally the inline styles. The inline styles having highest precedence will override all other styles.
 In case of external style files, the recent most style has the highest precedence and will be used.
- 
+a:link means its a normal unvisited link, a:visited means it has been visited, a:hover means it is activated by a mouse, a:focus means it is activated by keyboard using tab key, a:active means it is clicked. a:hover MUST come after a:link and a:visited. a:active MUST come after a:hover
+border-box takes content + padding + border.  
 

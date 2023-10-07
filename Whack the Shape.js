@@ -11,7 +11,7 @@ function randomHoleFunc(){
    console.log(randomHoleNum);
     if( previousOne == randomHoleNum ){ //you couldnt think of this!
         console.log('its the same')
-        return randomHoleFunc(); //?why without return over here it repeats itself but with repeat it does not repeats itself
+        return randomHoleFunc(); //see usually when return sameFunctionName statement is executed, it goes back and executes the same same. Like here if 14 is executed, then it goes back to line 9. Only if line 19 is executed, then it goes back to line 29
     }
     randomHoleElement = holes[randomHoleNum];
     previousOne = randomHoleNum;

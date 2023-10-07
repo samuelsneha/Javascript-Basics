@@ -1,3 +1,4 @@
+//this debounce code is wierd hence you are not getting the output. Ignore this project and just understand the concept of debounce.
 var images = [...document.querySelectorAll('.images')]
 console.log( images );
 //implementing debounce

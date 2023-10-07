@@ -48,7 +48,7 @@ fetch (fetchSource)
    });
  //this is a hack that once you get all the arrays from the API into this places array and then you filter them
 
- places.forEach((element) => {
+ places.forEach((element) => { //if these 3 lines was outside the fetch then you would get nothing consoled because fetch takes time to fetch the details and being asynchorous it will wait for the data to come and in the meanwhile it will go to further lines. But it wont be able to get anything in the console as its not yet fetched.And once it passes from here, it wont come back to it again. 
    console.log(element)
    console.log('hi');
 }); 

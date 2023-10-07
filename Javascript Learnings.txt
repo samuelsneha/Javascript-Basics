@@ -120,3 +120,12 @@ It is an umbrella term for technologies like Asynchronous JS, XML and many other
    But if you do console.log(this.dataset.xyx) on an element which does not have data-* attribute, then you will get undefined or null.
    Similarly you can also do console.log(this.name) and console.log(this.value) to get the values of name and value attribute of a particular HTML Tag
 2) To iterate through all the keys in an object, we should use for-in loop   
+3) When we call a function inside that same function, the same fyunction gets executed. Its called Recurssion.
+4) Your transition was not working because you had put display none and then did transition. Transitions work like a blink when the display is none. But then when i removed it and made the overflow:hidden of its parent property it started working properly.
+5) var pageX = event.pageX; this gives the value of the clicked point right from the start of the page. //var offsetLeft =  outerBox[0].offsetLeft //would give us the left margin for the outerBox element in px. Basically the left space outside the element outerBox[0].
+   So basically if you analyze, you will see that by subtracting the pageX from offsetLeft you will get the point where you actually clicked inside the outerBox element 
+6) Anytime we want to level our hovering/measurements with our own choice of measurements.So we should do our chice of max, our choice of min. So multiply with ((max-min)+min ) 
+7) Try to use local storage as much as possible in your projects. And remember you should set the item in local storage in the form of strings only. And then while retrieving it you should parse it.
+8) this.dataset is usually a string.So you do parse.Float() to convert it into a number. It provides read/write access to custom data attributes (data-*) on elements. So basically it can be used only on elements which have data- attributes
+9) (this.name); here the value of the name attrbute ie. volume or playbackRate is displayed. (this.value): here the value of the value attrbute displayed
+10)The timeupdate event is fired when the time indicated by the currentTime attribute has been updated. 
